@@ -1,8 +1,13 @@
 "use client";
 
-import { motion, useReducedMotion } from "framer-motion";
+import { motion, type Transition, useReducedMotion } from "framer-motion";
 
-const pathTransition = { duration: 2.6, repeat: Infinity, repeatType: "loop" as const, ease: "easeInOut" };
+const pathTransition: Transition = {
+  duration: 2.6,
+  repeat: Infinity,
+  repeatType: "loop",
+  ease: "easeInOut",
+};
 
 export function HeroAnimation() {
   const reduceMotion = useReducedMotion();
