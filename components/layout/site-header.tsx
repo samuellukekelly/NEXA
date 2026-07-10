@@ -15,7 +15,7 @@ export function SiteHeader() {
         <NexaLogo />
         <nav className="hidden items-center gap-6 lg:flex" aria-label="Main navigation">
           {siteConfig.navigation.map((item) => (
-            <Link key={item.href} href={item.href} className="text-sm font-bold text-nexa-silver transition hover:text-white">
+            <Link key={item.href} href={item.href} className="text-sm font-medium text-nexa-silver transition hover:text-white">
               {item.label}
             </Link>
           ))}
@@ -30,7 +30,7 @@ export function SiteHeader() {
           aria-expanded={open}
           onClick={() => setOpen((value) => !value)}
         >
-          <span className="text-xl font-black text-white">{open ? "X" : "≡"}</span>
+          <span className="text-xl font-semibold text-white">{open ? "X" : "≡"}</span>
         </button>
       </div>
       <div
@@ -44,7 +44,7 @@ export function SiteHeader() {
             <Link
               key={item.href}
               href={item.href}
-              className="rounded-md px-3 py-3 text-lg font-black text-white hover:bg-white/[0.06]"
+              className="rounded-md px-3 py-3 text-lg font-semibold text-white transition hover:bg-white/[0.06]"
               onClick={() => setOpen(false)}
             >
               {item.label}

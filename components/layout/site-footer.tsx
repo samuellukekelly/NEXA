@@ -11,7 +11,7 @@ export function SiteFooter() {
           <NexaLogo />
           <p className="mt-4 max-w-2xl text-sm text-nexa-muted">{siteConfig.positioning}</p>
         </div>
-        <div className="flex flex-wrap gap-4 text-sm font-bold text-nexa-silver">
+        <div className="flex flex-wrap gap-4 text-sm font-medium text-nexa-silver">
           <Link href="/about">About</Link>
           <Link href="/process">Process</Link>
           <Link href="/tools">Tools</Link>
@@ -19,7 +19,7 @@ export function SiteFooter() {
           <Link href="/contact">Contact</Link>
         </div>
         <p className="text-xs text-nexa-muted lg:col-span-2">
-          © 2026 {siteConfig.legalName}. Business details are placeholders until verified.
+          Copyright 2026 {siteConfig.legalName}. Business details are placeholders until verified.
         </p>
       </Container>
     </footer>

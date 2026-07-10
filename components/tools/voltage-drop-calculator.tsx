@@ -50,10 +50,10 @@ export function VoltageDropCalculator() {
         </div>
       </div>
       <div className="rounded-lg border border-nexa-cyan/20 bg-nexa-cyan/10 p-6">
-        <p className="text-xs font-black uppercase tracking-[0.18em] text-nexa-light-cyan">Indicative result</p>
+        <p className="text-xs font-semibold uppercase tracking-[0.18em] text-nexa-light-cyan">Indicative result</p>
         {result ? (
           <>
-            <p className="mt-4 text-5xl font-black text-white">{result.drop.toFixed(2)} V</p>
+            <p className="mt-4 text-5xl font-semibold text-white">{result.drop.toFixed(2)} V</p>
             <p className="mt-2 text-xl font-bold text-nexa-silver">{result.percent.toFixed(2)}% voltage drop</p>
           </>
         ) : (

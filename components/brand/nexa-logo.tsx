@@ -23,8 +23,8 @@ export function NexaLogo({ className }: { className?: string }) {
         />
       </svg>
       <span className="leading-none">
-        <span className="block text-xl font-black tracking-[0.18em] text-white">{siteConfig.name}</span>
-        <span className="mt-1 block text-[10px] font-bold uppercase tracking-[0.24em] text-nexa-muted">
+        <span className="block text-xl font-semibold tracking-[0.18em] text-white">{siteConfig.name}</span>
+        <span className="mt-1 block text-[10px] font-medium uppercase tracking-[0.24em] text-nexa-muted">
           {siteConfig.descriptor}
         </span>
       </span>

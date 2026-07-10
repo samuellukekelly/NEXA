@@ -19,7 +19,7 @@ export function Tabs({
             key={tab.id}
             type="button"
             className={cn(
-              "rounded-md border px-3 py-2 text-sm font-black transition",
+              "rounded-md border px-3 py-2 text-sm font-semibold transition duration-300",
               active === tab.id
                 ? "border-nexa-cyan bg-nexa-cyan text-nexa-deep"
                 : "border-white/10 bg-white/[0.035] text-nexa-silver hover:border-nexa-cyan/40",

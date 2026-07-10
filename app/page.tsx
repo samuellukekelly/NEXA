@@ -71,7 +71,7 @@ export default function HomePage() {
           <Heading className="mt-4 max-w-4xl text-4xl lg:text-6xl">Electrical services for complex buildings.</Heading>
           <div className="mt-10 grid gap-4 md:grid-cols-2 lg:grid-cols-4">
             {siteConfig.services.map((service) => (
-              <Card key={service}><h3 className="text-lg font-black text-white">{service}</h3></Card>
+              <Card key={service}><h3 className="text-lg font-semibold text-white">{service}</h3></Card>
             ))}
           </div>
         </Container>
