@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NEXA | M&amp;E Building Services Engineers</title>
+  <meta name="description" content="NEXA is a modern M&E building services consultancy delivering coordinated mechanical, electrical and low carbon design for healthcare, commercial and public sector projects." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header" id="top">
+    <nav class="nav" aria-label="Main navigation">
+      <a href="#top" class="brand" aria-label="NEXA homepage">
+        <span class="brand-mark">N</span>
+        <span class="brand-text">
+          <strong>NEXA</strong>
+          <small>M&amp;E Building Services</small>
+        </span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Open navigation">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-links" id="nav-links">
+        <a href="#services">Services</a>
+        <a href="#sectors">Sectors</a>
+        <a href="#studio">Studio</a>
+        <a href="#process">Process</a>
+        <a href="#contact" class="nav-cta">Start a Project</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section-pad">
+      <div class="hero-grid">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Modern M&amp;E Building Services Consultancy</p>
+          <h1>Building systems engineered around people, performance and carbon.</h1>
+          <p class="hero-text">NEXA brings mechanical, electrical, public health and low carbon design into one coordinated workflow for complex live buildings.</p>
+          <div class="hero-actions">
+            <a href="#contact" class="btn primary">Start a Project</a>
+            <a href="#studio" class="btn secondary">Open Project Studio</a>
+          </div>
+          <div class="trust-row" aria-label="Core capabilities">
+            <span>Mechanical</span>
+            <span>Electrical</span>
+            <span>Public Health</span>
+            <span>Low Carbon</span>
+            <span>Digital Delivery</span>
+          </div>
+        </div>
+
+        <div class="systems-panel reveal" aria-label="Interactive building systems visual">
+          <div class="panel-toolbar">
+            <span>Live Systems Model</span>
+            <button class="icon-btn active" type="button" data-layer="electrical" aria-pressed="true" title="Electrical layer">E</button>
+            <button class="icon-btn active" type="button" data-layer="mechanical" aria-pressed="true" title="Mechanical layer">M</button>
+            <button class="icon-btn active" type="button" data-layer="public-health" aria-pressed="true" title="Public health layer">P</button>
+          </div>
+          <div class="building-model" data-active-layers="electrical mechanical public-health">
+            <svg viewBox="0 0 760 560" role="img" aria-label="Digital model of a building with M&E service routes">
+              <defs>
+                <linearGradient id="routeElectrical" x1="0%" y1="0%" x2="100%" y2="0%">
+                  <stop offset="0%" stop-color="#38bdf8" stop-opacity="0" />
+                  <stop offset="45%" stop-color="#38bdf8" />
+                  <stop offset="100%" stop-color="#38bdf8" stop-opacity="0" />
+                </linearGradient>
+                <linearGradient id="routeMechanical" x1="100%" y1="0%" x2="0%" y2="100%">
+                  <stop offset="0%" stop-color="#22c55e" stop-opacity="0" />
+                  <stop offset="50%" stop-color="#22c55e" />
+                  <stop offset="100%" stop-color="#22c55e" stop-opacity="0" />
+                </linearGradient>
+                <linearGradient id="routePublic" x1="0%" y1="100%" x2="100%" y2="0%">
+                  <stop offset="0%" stop-color="#f59e0b" stop-opacity="0" />
+                  <stop offset="50%" stop-color="#f59e0b" />
+                  <stop offset="100%" stop-color="#f59e0b" stop-opacity="0" />
+                </linearGradient>
+              </defs>
+              <g class="grid-lines">
+                <path d="M42 466 H722M90 506 H670M150 540 H610" />
+                <path d="M94 466 L44 540M222 466 L184 540M350 466 L350 540M480 466 L520 540M604 466 L690 540" />
+              </g>
+              <g class="building-shell">
+                <path d="M208 424 V198 L392 94 L612 226 V424 Z" />
+                <path d="M392 94 V424M208 198 L392 306 L612 226M208 258 L392 346 L612 282M208 318 L392 384 L612 336" />
+                <path d="M252 224 V424M300 252 V424M348 280 V424M442 124 V424M492 154 V424M542 186 V424M584 212 V424" />
+              </g>
+              <g class="floor-plates">
+                <path d="M248 262 L332 306 V340 L248 304 Z" />
+                <path d="M430 210 L566 286 V320 L430 260 Z" />
+                <path d="M430 326 L566 362 V394 L430 374 Z" />
+              </g>
+              <g class="system-route route-electrical">
+                <path d="M58 502 C144 492 180 450 248 438 C316 426 380 456 448 416 C520 374 574 394 710 338" />
+                <path d="M392 424 V154" />
+              </g>
+              <g class="system-route route-mechanical">
+                <path d="M90 466 C168 444 236 398 326 394 C404 390 462 426 534 386 C596 352 636 304 716 294" />
+                <path d="M540 424 V206" />
+              </g>
+              <g class="system-route route-public-health">
+                <path d="M130 534 C224 500 274 468 356 468 C436 468 482 504 556 468 C626 436 660 426 728 424" />
+                <path d="M250 424 V234" />
+              </g>
+              <g class="model-nodes">
+                <circle cx="392" cy="154" r="26" /><text x="392" y="160">E</text>
+                <circle cx="540" cy="206" r="26" /><text x="540" y="212">M</text>
+                <circle cx="250" cy="234" r="26" /><text x="250" y="240">P</text>
+                <circle cx="650" cy="338" r="26" /><text x="650" y="344">C</text>
+              </g>
+            </svg>
+          </div>
+          <div class="model-stats">
+            <div><small>Scope</small><strong>M&amp;E + PH</strong></div>
+            <div><small>Carbon Lens</small><strong>Embedded</strong></div>
+            <div><small>Delivery</small><strong>BIM-ready</strong></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-pad intro" id="about">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Rebranded Approach</p>
+        <h2>One joined-up building services partner, from early strategy to site delivery.</h2>
+      </div>
+      <div class="intro-copy reveal">
+        <p>NEXA supports clients, architects, contractors and estates teams with practical M&amp;E design that is coordinated early, clearly documented and buildable on live projects.</p>
+        <p>The brand has moved from electrical-only consultancy to a wider mechanical and electrical building services offer, with low carbon thinking and digital coordination built into every stage.</p>
+      </div>
+    </section>
+
+    <section class="section-pad services" id="services">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Interactive Services</p>
+        <h2>Explore the service mix that fits your project.</h2>
+      </div>
+      <div class="service-tabs reveal" role="tablist" aria-label="Service categories">
+        <button class="tab active" type="button" role="tab" aria-selected="true" data-service="electrical">Electrical</button>
+        <button class="tab" type="button" role="tab" aria-selected="false" data-service="mechanical">Mechanical</button>
+        <button class="tab" type="button" role="tab" aria-selected="false" data-service="public-health">Public Health</button>
+        <button class="tab" type="button" role="tab" aria-selected="false" data-service="sustainability">Low Carbon</button>
+      </div>
+      <div class="service-explorer reveal" aria-live="polite">
+        <article class="service-detail">
+          <span class="service-kicker" id="service-kicker">Electrical Design</span>
+          <h3 id="service-title">Resilient power, lighting and life safety systems.</h3>
+          <p id="service-copy">From load assessments and LV distribution to lighting, fire alarm interfaces and critical supplies, NEXA designs electrical systems that are clear, compliant and easy to coordinate.</p>
+          <ul id="service-list">
+            <li>LV distribution and single line diagrams</li>
+            <li>Lighting, emergency lighting and controls</li>
+            <li>Small power, containment and mechanical supplies</li>
+            <li>Healthcare resilience and critical power support</li>
+          </ul>
+        </article>
+        <aside class="service-output">
+          <small>Typical Outputs</small>
+          <div id="service-output-tags">
+            <span>Stage reports</span><span>Drawings</span><span>Schedules</span><span>Specifications</span>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section-pad sectors" id="sectors">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Sectors</p>
+        <h2>Focused expertise for buildings where coordination matters.</h2>
+      </div>
+      <div class="sector-controls reveal" aria-label="Filter sectors">
+        <button class="chip active" type="button" data-filter="all">All</button>
+        <button class="chip" type="button" data-filter="clinical">Clinical</button>
+        <button class="chip" type="button" data-filter="workplace">Workplace</button>
+        <button class="chip" type="button" data-filter="public">Public</button>
+        <button class="chip" type="button" data-filter="residential">Residential</button>
+      </div>
+      <div class="sector-grid reveal">
+        <article data-sector="clinical"><span>01</span><h3>Healthcare</h3><p>Critical power, ventilation interfaces, medical locations and phased live-site delivery.</p></article>
+        <article data-sector="clinical"><span>02</span><h3>Private Healthcare</h3><p>Diagnostic, treatment and clinical environments with premium user experience.</p></article>
+        <article data-sector="workplace"><span>03</span><h3>Commercial</h3><p>Flexible CAT A and CAT B services that support changing occupancy and fit-out needs.</p></article>
+        <article data-sector="public"><span>04</span><h3>Education</h3><p>Robust, efficient systems for schools, colleges and specialist learning spaces.</p></article>
+        <article data-sector="public"><span>05</span><h3>Public Sector</h3><p>Estate upgrades, compliance-led refurbishment and long-life infrastructure planning.</p></article>
+        <article data-sector="residential"><span>06</span><h3>Residential</h3><p>Practical M&amp;E strategies for multi-unit residential and mixed-use developments.</p></article>
+      </div>
+    </section>
+
+    <section class="section-pad studio" id="studio">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Project Studio</p>
+        <h2>Shape a smarter brief before the first meeting.</h2>
+      </div>
+      <div class="studio-grid reveal">
+        <form class="brief-builder" id="brief-builder">
+          <label>Project sector
+            <select id="brief-sector">
+              <option value="healthcare">Healthcare</option>
+              <option value="commercial">Commercial</option>
+              <option value="education">Education</option>
+              <option value="public">Public sector</option>
+              <option value="residential">Residential</option>
+            </select>
+          </label>
+          <label>Approximate floor area
+            <input type="range" id="brief-area" min="250" max="12000" step="250" value="3000">
+          </label>
+          <output id="area-output" for="brief-area">3,000 m2</output>
+          <fieldset>
+            <legend>Required disciplines</legend>
+            <label><input type="checkbox" value="Electrical" checked> Electrical</label>
+            <label><input type="checkbox" value="Mechanical" checked> Mechanical</label>
+            <label><input type="checkbox" value="Public Health"> Public health</label>
+            <label><input type="checkbox" value="Low Carbon"> Low carbon strategy</label>
+          </fieldset>
+        </form>
+        <aside class="brief-summary" aria-live="polite">
+          <small>Suggested Route</small>
+          <h3 id="brief-title">Coordinated M&amp;E design route</h3>
+          <p id="brief-copy">Start with a focused feasibility and services strategy, then move into coordinated design once existing capacity and project constraints are confirmed.</p>
+          <div class="summary-metrics">
+            <div><span id="brief-stage">RIBA 2-4</span><small>Design stages</small></div>
+            <div><span id="brief-risk">Medium</span><small>Coordination risk</small></div>
+            <div><span id="brief-team">2-3</span><small>Core specialists</small></div>
+          </div>
+          <button class="btn primary" type="button" id="copy-brief">Copy Brief Summary</button>
+          <pre class="brief-export" id="brief-export" hidden></pre>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section-pad process" id="process">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Process</p>
+        <h2>A clear route from strategic brief to coordinated delivery.</h2>
+      </div>
+      <div class="process-list reveal">
+        <button class="process-step active" type="button" aria-expanded="true">
+          <span>01</span><strong>Discover</strong><p>Confirm brief, stakeholders, site constraints, existing capacity and compliance drivers.</p>
+        </button>
+        <button class="process-step" type="button" aria-expanded="false">
+          <span>02</span><strong>Define</strong><p>Set the M&amp;E strategy, carbon priorities, interfaces, risks and stage deliverables.</p>
+        </button>
+        <button class="process-step" type="button" aria-expanded="false">
+          <span>03</span><strong>Coordinate</strong><p>Develop mechanical, electrical and public health design in a single coordinated model.</p>
+        </button>
+        <button class="process-step" type="button" aria-expanded="false">
+          <span>04</span><strong>Deliver</strong><p>Support tender, construction, commissioning and handover with clear technical information.</p>
+        </button>
+      </div>
+    </section>
+
+    <section class="section-pad why">
+      <div class="why-grid reveal">
+        <div>
+          <p class="eyebrow">Why NEXA</p>
+          <h2>Modern consultancy without heavy process drag.</h2>
+        </div>
+        <div class="why-list">
+          <p><strong>Integrated</strong> mechanical, electrical and public health thinking from the start.</p>
+          <p><strong>Practical</strong> buildable designs shaped around programme, site access and cost.</p>
+          <p><strong>Digital</strong> CAD, Revit and BIM-ready workflows for cleaner coordination.</p>
+          <p><strong>Low carbon</strong> systems thinking that makes energy, comfort and resilience visible.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-pad contact" id="contact">
+      <div class="contact-grid">
+        <div class="reveal">
+          <p class="eyebrow">Contact</p>
+          <h2>Tell us what you are building next.</h2>
+          <p>Send a short brief and NEXA will help identify the right M&amp;E design route for your project.</p>
+          <div class="contact-direct">
+            <a href="mailto:hello@nexa-buildingservices.co.uk">hello@nexa-buildingservices.co.uk</a>
+            <a href="tel:+440000000000">+44 (0)0000 000000</a>
+          </div>
+        </div>
+        <form class="contact-form reveal" id="contact-form" novalidate>
+          <label>Name<input name="name" type="text" placeholder="Your name" required></label>
+          <label>Email<input name="email" type="email" placeholder="you@example.com" required></label>
+          <label>Project type
+            <select name="projectType" required>
+              <option value="">Select a project type</option>
+              <option>Healthcare</option>
+              <option>Commercial</option>
+              <option>Education</option>
+              <option>Public Sector</option>
+              <option>Residential</option>
+              <option>Other</option>
+            </select>
+          </label>
+          <label>Message<textarea name="message" placeholder="Briefly describe your project" required></textarea></label>
+          <button type="submit" class="btn primary">Send Enquiry</button>
+          <small class="form-status" id="form-status">This demo form validates your enquiry locally.</small>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a href="#top" class="brand footer-brand" aria-label="Back to top">
+      <span class="brand-mark">N</span>
+      <span class="brand-text"><strong>NEXA</strong><small>M&amp;E Building Services</small></span>
+    </a>
+    <p>&copy; 2026 NEXA Building Services Engineers Ltd. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
