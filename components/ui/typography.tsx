@@ -3,7 +3,7 @@ import { cn } from "@/lib/utils";
 
 export function Eyebrow({ children, className }: { children: ReactNode; className?: string }) {
   return (
-    <p className={cn("text-xs font-black uppercase tracking-[0.24em] text-nexa-cyan", className)}>{children}</p>
+    <p className={cn("text-xs font-semibold uppercase tracking-[0.18em] text-nexa-cyan", className)}>{children}</p>
   );
 }
 
@@ -18,7 +18,7 @@ export function Heading({
 }) {
   const Component = as;
   return (
-    <Component className={cn("text-balance font-black leading-[0.98] tracking-[-0.04em] text-white", className)}>
+    <Component className={cn("text-balance font-semibold leading-[1.05] tracking-normal text-white", className)}>
       {children}
     </Component>
   );

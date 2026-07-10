@@ -25,8 +25,8 @@
   --color-nexa-slate: var(--nexa-slate);
   --color-nexa-silver: var(--nexa-silver);
   --color-nexa-muted: var(--nexa-muted);
-  --font-sans: "Geist", "Geist Fallback", ui-sans-serif, system-ui, sans-serif;
-  --font-mono: "Geist Mono", "Geist Mono Fallback", ui-monospace, monospace;
+  --font-sans: var(--font-poppins), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: ui-monospace, "SFMono-Regular", Consolas, "Liberation Mono", monospace;
 }
 
 * {
@@ -45,6 +45,7 @@ body {
     radial-gradient(circle at 82% 8%, rgba(0, 199, 212, 0.16), transparent 32rem),
     linear-gradient(180deg, var(--nexa-deep), #020914 44%, var(--nexa-navy));
   color: var(--nexa-white);
+  font-weight: 400;
 }
 
 body::before {
@@ -78,6 +79,22 @@ a {
   background: linear-gradient(90deg, transparent, var(--nexa-line), transparent);
 }
 
+main {
+  animation: page-in 420ms ease-out both;
+}
+
+@keyframes page-in {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .print-only {
   display: none;
 }
@@ -90,6 +107,10 @@ a {
     animation-duration: 0.001ms !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.001ms !important;
+  }
+
+  main {
+    animation: none !important;
   }
 }
 
