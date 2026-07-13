@@ -5,7 +5,7 @@ import { cn } from "@/lib/utils";
 type ButtonVariant = "primary" | "secondary" | "ghost";
 
 const variants: Record<ButtonVariant, string> = {
-  primary: "border-nexa-cyan bg-nexa-cyan text-nexa-deep hover:bg-nexa-light-cyan",
+  primary: "border-nexa-cyan bg-nexa-cyan text-[#04101D] hover:bg-nexa-light-cyan",
   secondary: "border-white/15 bg-white/[0.055] text-white hover:border-nexa-cyan/60 hover:bg-white/[0.09]",
   ghost: "border-transparent bg-transparent text-nexa-silver hover:bg-white/[0.06]",
 };

@@ -1,6 +1,21 @@
 @import "tailwindcss";
 
 :root {
+  --nexa-navy: #eaf4f8;
+  --nexa-deep: #f7fbfd;
+  --nexa-cyan: #00c7d4;
+  --nexa-light-cyan: #22d8e2;
+  --nexa-slate: #2b2f33;
+  --nexa-silver: #314252;
+  --nexa-white: #081320;
+  --nexa-muted: #607589;
+  --nexa-line: rgba(0, 199, 212, 0.2);
+  --nexa-glass: rgba(255, 255, 255, 0.76);
+  --background: var(--nexa-deep);
+  --foreground: var(--nexa-white);
+}
+
+.dark {
   --nexa-navy: #081320;
   --nexa-deep: #04101d;
   --nexa-cyan: #00c7d4;
@@ -42,10 +57,16 @@ body {
   min-height: 100vh;
   margin: 0;
   background:
-    radial-gradient(circle at 82% 8%, rgba(0, 199, 212, 0.16), transparent 32rem),
-    linear-gradient(180deg, var(--nexa-deep), #020914 44%, var(--nexa-navy));
+    radial-gradient(circle at 82% 8%, rgba(0, 199, 212, 0.18), transparent 30rem),
+    linear-gradient(180deg, #ffffff, var(--nexa-deep) 48%, var(--nexa-navy));
   color: var(--nexa-white);
   font-weight: 400;
+}
+
+.dark body {
+  background:
+    radial-gradient(circle at 82% 8%, rgba(0, 199, 212, 0.16), transparent 32rem),
+    linear-gradient(180deg, var(--nexa-deep), #020914 44%, var(--nexa-navy));
 }
 
 body::before {
@@ -55,10 +76,16 @@ body::before {
   z-index: -1;
   pointer-events: none;
   background-image:
-    linear-gradient(rgba(96, 230, 237, 0.07) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(96, 230, 237, 0.07) 1px, transparent 1px);
+    linear-gradient(rgba(0, 199, 212, 0.09) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 199, 212, 0.09) 1px, transparent 1px);
   background-size: 72px 72px;
   mask-image: linear-gradient(to bottom, black, transparent 78%);
+}
+
+.dark body::before {
+  background-image:
+    linear-gradient(rgba(96, 230, 237, 0.07) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(96, 230, 237, 0.07) 1px, transparent 1px);
 }
 
 ::selection {
@@ -77,6 +104,58 @@ a {
 
 .technical-line {
   background: linear-gradient(90deg, transparent, var(--nexa-line), transparent);
+}
+
+.text-white {
+  color: var(--nexa-white) !important;
+}
+
+.bg-white\/\[0\.035\],
+.bg-white\/\[0\.04\],
+.bg-white\/\[0\.045\],
+.bg-white\/\[0\.055\] {
+  background-color: rgba(255, 255, 255, 0.74) !important;
+}
+
+.border-white\/10,
+.border-white\/15 {
+  border-color: rgba(0, 199, 212, 0.18) !important;
+}
+
+.dark .bg-white\/\[0\.035\] {
+  background-color: rgba(255, 255, 255, 0.035) !important;
+}
+
+.dark .bg-white\/\[0\.04\] {
+  background-color: rgba(255, 255, 255, 0.04) !important;
+}
+
+.dark .bg-white\/\[0\.045\] {
+  background-color: rgba(255, 255, 255, 0.045) !important;
+}
+
+.dark .bg-white\/\[0\.055\] {
+  background-color: rgba(255, 255, 255, 0.055) !important;
+}
+
+.dark .bg-white {
+  background-color: var(--nexa-deep) !important;
+}
+
+.dark .bg-white\/75 {
+  background-color: rgba(255, 255, 255, 0.055) !important;
+}
+
+.dark .bg-white\/80 {
+  background-color: rgba(4, 16, 29, 0.8) !important;
+}
+
+.dark .border-white\/10 {
+  border-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+.dark .border-white\/15 {
+  border-color: rgba(255, 255, 255, 0.15) !important;
 }
 
 main {
