@@ -22,7 +22,7 @@ export function SiteHeader() {
             </Link>
           ))}
           <ButtonLink href="/contact" className="min-h-10 px-3 py-2">
-            Start a Project
+            Start
           </ButtonLink>
           <ThemeToggle />
         </nav>
@@ -54,7 +54,7 @@ export function SiteHeader() {
             </Link>
           ))}
           <ButtonLink href="/contact" onClick={() => setOpen(false)} className="mt-2">
-            Start a Project
+            Start
           </ButtonLink>
           <ThemeToggle />
         </nav>
