@@ -7,7 +7,7 @@ export function ThemeToggle() {
 
   useEffect(() => {
     const stored = window.localStorage.getItem("nexa-theme");
-    const shouldUseDark = stored ? stored === "dark" : true;
+    const shouldUseDark = stored === "dark";
     document.documentElement.classList.toggle("dark", shouldUseDark);
     setDark(shouldUseDark);
   }, []);

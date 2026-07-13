@@ -38,7 +38,7 @@ export function SiteHeader() {
       </div>
       <div
         className={cn(
-          "border-t border-white/10 bg-white px-5 py-5 dark:bg-nexa-deep lg:hidden",
+          "border-t border-white/10 bg-nexa-deep px-5 py-5 lg:hidden",
           open ? "block" : "hidden",
         )}
       >

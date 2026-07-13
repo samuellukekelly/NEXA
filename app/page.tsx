@@ -28,7 +28,7 @@ const environments = ["Healthcare", "Commercial", "Public sector", "Education", 
 
 export default function HomePage() {
   return (
-    <main className="overflow-hidden bg-[#F7FBFD] pt-20 text-[#081320] dark:bg-[#04101D] dark:text-white">
+    <main className="overflow-hidden pt-20 text-nexa-white">
       <Section className="relative min-h-[calc(100vh-5rem)] py-12 lg:py-20">
         <div className="absolute inset-x-0 top-0 h-px bg-nexa-cyan/40" />
         <Container className="grid min-h-[calc(100vh-10rem)] items-center gap-12 lg:grid-cols-[.82fr_1.18fr]">
@@ -52,11 +52,11 @@ export default function HomePage() {
         </Container>
       </Section>
 
-      <Section className="border-y border-nexa-cyan/15 bg-[#EAF4F8] py-10 dark:bg-[#071827]">
+      <Section className="border-y border-nexa-cyan/15 bg-nexa-navy py-10">
         <Container>
           <div className="grid gap-6 text-sm font-semibold uppercase tracking-[0.18em] text-nexa-muted md:grid-cols-3">
             {principles.map((principle) => (
-              <p key={principle} className="border-l border-nexa-cyan/40 pl-4 text-white">
+              <p key={principle} className="border-l border-nexa-cyan/40 pl-4 text-nexa-white">
                 {principle}
               </p>
             ))}
@@ -71,7 +71,7 @@ export default function HomePage() {
             <Heading className="mt-4 text-5xl lg:text-7xl">A challenger to slow engineering.</Heading>
           </div>
           <div className="grid gap-8 border-l border-nexa-cyan/25 pl-6 lg:pl-10">
-            <p className="max-w-3xl text-3xl font-semibold leading-tight text-white">
+            <p className="max-w-3xl text-3xl font-semibold leading-tight text-nexa-white">
               NEXA is a digitally native electrical design practice for clients who expect technical work to be clear,
               fast and beautifully controlled.
             </p>
@@ -97,7 +97,7 @@ export default function HomePage() {
               <div key={title} className="grid gap-4 border-b border-[#00C7D4]/25 py-8 lg:grid-cols-[6rem_1fr] lg:px-10">
                 <p className="font-mono text-sm text-[#00A8B4]">0{index + 1}</p>
                 <div>
-                  <h2 className="text-2xl font-semibold">{title}</h2>
+                  <h2 className="text-2xl font-semibold text-[#04101D]">{title}</h2>
                   <p className="mt-2 max-w-md text-base leading-7 text-[#314252]">{text}</p>
                 </div>
               </div>
@@ -122,7 +122,7 @@ export default function HomePage() {
           </div>
           <div className="mt-14 grid grid-cols-2 border-y border-nexa-cyan/20 md:grid-cols-3 lg:grid-cols-6">
             {environments.map((environment) => (
-              <div key={environment} className="border-r border-nexa-cyan/20 py-8 pr-6 text-sm font-semibold uppercase tracking-[0.14em] text-white last:border-r-0">
+              <div key={environment} className="border-r border-nexa-cyan/20 py-8 pr-6 text-sm font-semibold uppercase tracking-[0.14em] text-nexa-white last:border-r-0">
                 {environment}
               </div>
             ))}
@@ -130,7 +130,7 @@ export default function HomePage() {
         </Container>
       </Section>
 
-      <Section className="bg-[#EAF4F8] dark:bg-[#061523]">
+      <Section className="bg-nexa-navy">
         <Container className="grid gap-10 lg:grid-cols-[.85fr_1.15fr]">
           <div>
             <Eyebrow>Process</Eyebrow>
@@ -140,7 +140,7 @@ export default function HomePage() {
             {["Brief", "Model", "Coordinate", "Validate", "Deliver"].map((step, index) => (
               <div key={step} className="group grid border-b border-nexa-cyan/15 py-6 transition hover:border-nexa-cyan/60 md:grid-cols-[8rem_1fr]">
                 <p className="font-mono text-sm text-nexa-cyan">0{index + 1}</p>
-                <h2 className="text-3xl font-semibold text-white transition group-hover:translate-x-2">{step}</h2>
+                <h2 className="text-3xl font-semibold text-nexa-white transition group-hover:translate-x-2">{step}</h2>
               </div>
             ))}
           </div>

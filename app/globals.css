@@ -138,10 +138,6 @@ a {
   background-color: rgba(255, 255, 255, 0.055) !important;
 }
 
-.dark .bg-white {
-  background-color: var(--nexa-deep) !important;
-}
-
 .dark .bg-white\/75 {
   background-color: rgba(255, 255, 255, 0.055) !important;
 }
